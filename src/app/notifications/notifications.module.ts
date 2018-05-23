@@ -1,7 +1,6 @@
 // Angular
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Router } from "@angular/router";
+import { NgModule } from '@angular/core';
 
 // Alert Component
 import { AlertModule } from 'ngx-bootstrap/alert';
@@ -11,29 +10,22 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { ModalsComponent } from './modals/modals.component';
 import { Modal500Component } from './modal-500/modal-500.component';
 
-import { BsModalService } from 'ngx-bootstrap/modal';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    AlertModule.forRoot(),
+    ModalModule.forRoot()
   ],
   declarations: [
     ModalsComponent,
     Modal500Component,
   ],
   entryComponents: [
-    ModalsComponent,
-    Modal500Component
+    ModalsComponent
   ],
   exports: [
-    ModalsComponent,
-    Modal500Component,
-    RouterModule,
-  ],
-  providers: [
-    BsModalService
+    ModalsComponent
   ]
 })
-export class NotificationsModule { 
-}
+export class NotificationsModule { }

@@ -11,7 +11,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { ModalsComponent } from '../../notifications/modals/modals.component';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-dashboard',
   templateUrl: 'login.component.html'
 })
 export class LoginComponent {
