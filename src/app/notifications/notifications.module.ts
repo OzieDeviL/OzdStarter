@@ -9,13 +9,15 @@ import { AlertModule } from 'ngx-bootstrap/alert';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ModalsComponent } from './modals/modals.component';
 import { Modal500Component } from './modal-500/modal-500.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   imports: [
     CommonModule,
     AlertModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    RouterModule
   ],
   declarations: [
     ModalsComponent,

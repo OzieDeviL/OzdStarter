@@ -8,6 +8,6 @@
           <p *ngFor="let paragraph of body">{{paragraph}}</p>
       </div>
       <div class="modal-footer">
-        <button *ngIf="routeBtn" type="button" class="btn btn-success" (click)="bsModalRef.hide()" [routerLink]="route">{{routeBtnName}}</button>
+        <button *ngIf="routeBtn" type="button" class="btn btn-success" (click)="bsModalRef.hide()" routerLink="route">{{routeBtnName}}</button>
         <button *ngIf="closeBtn" type="button" class="btn btn-success" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
       </div>
